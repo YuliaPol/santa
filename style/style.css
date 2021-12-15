@@ -1,0 +1,378 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+.page-wrap {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-size: 13px;
+  width: 100%;
+  line-height: 15px;
+  min-height: 100vh;
+  background: url(./../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-wrap .content-block {
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 25px;
+  max-width: 1075px;
+  margin: auto;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.page-wrap .content-block .form-group {
+  padding-bottom: 100px;
+}
+
+.page-wrap .content-block .form-group.has-error .question .name {
+  color: #D00000;
+}
+
+.page-wrap .content-block .form-group .error {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  color: #D00000;
+  display: none;
+}
+
+.page-wrap .content-block .form-group .question {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 40px;
+}
+
+.page-wrap .content-block .form-group .question .number {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #D00000;
+  padding-right: 30px;
+}
+
+.page-wrap .content-block .form-group .question .number .current {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.page-wrap .content-block .form-group .question .name {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 7px;
+  color: #000;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  border-bottom: 1px solid #E5E5E5;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000;
+  width: 100%;
+  -webkit-transition: border-color 0.3s ease-in;
+  -o-transition: border-color 0.3s ease-in;
+  transition: border-color 0.3s ease-in;
+  padding: 8px 0px;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea::-webkit-input-placeholder {
+  color: #C0C0C0;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea::-moz-placeholder {
+  color: #C0C0C0;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea:-ms-input-placeholder {
+  color: #C0C0C0;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea::-ms-input-placeholder {
+  color: #C0C0C0;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea::placeholder {
+  color: #C0C0C0;
+}
+
+.page-wrap .content-block .form-group .input-wrap textarea:focus {
+  border-color: #D00000;
+}
+
+.page-wrap .content-block .btn-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-wrap .content-block .btn-group .btn-submit {
+  display: block;
+  outline: none;
+  text-align: center;
+  border: none;
+  background: #D00000;
+  border-radius: 25px;
+  padding: 15px 45px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.page-wrap .thanks-wrap {
+  height: 60vh;
+  min-height: 250px;
+  max-height: 635px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-wrap .thanks-wrap .red-text {
+  margin-top: 100px;
+  background: #D00000;
+  border-radius: 25px;
+  padding: 15px 45px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.page-wrap .thanks-text {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.page-wrap .thanks-text .big-text {
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 10px;
+}
+
+.page-wrap .thanks-text .text {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-wrap {
+    padding: 60px;
+  }
+  .page-wrap .content-block .form-group {
+    padding-bottom: 50px;
+  }
+  .page-wrap .content-block .form-group .question {
+    padding-bottom: 20px;
+  }
+  .page-wrap .thanks-wrap .red-text {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .page-wrap .content-block .form-group {
+    padding-bottom: 35px;
+  }
+  .page-wrap .content-block .form-group .question {
+    padding-bottom: 10px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-wrap .content-block .form-group .question .number {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 14px;
+  }
+  .page-wrap .content-block .form-group .question .number .current {
+    font-size: 24px;
+    line-height: 18px;
+  }
+  .page-wrap .content-block .form-group .question .name {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 0px;
+  }
+  .page-wrap .thanks-text .big-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .page-wrap .thanks-text .text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .page-wrap .thanks-wrap .red-text {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-wrap {
+    padding: 40px 30px;
+  }
+  .page-wrap .content-block {
+    padding: 40px 30px;
+  }
+  .page-wrap .thanks-wrap {
+    min-height: 180px;
+    max-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .page-wrap .thanks-wrap .red-text {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-wrap .content-block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-wrap .content-block .form-group .question .number {
+    padding-right: 10px;
+  }
+  .page-wrap .thanks-text .big-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .page-wrap .thanks-text .text {
+    font-size: 14px;
+  }
+  .page-wrap .thanks-wrap {
+    min-height: initial;
+    max-height: initial;
+    height: 180px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
