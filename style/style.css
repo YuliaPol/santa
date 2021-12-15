@@ -59,7 +59,7 @@ body, html {
   line-height: 15px;
   min-height: 100vh;
   background: url(./../img/bg.jpg);
-  background-position: center;
+  background-position: center bottom -200px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
