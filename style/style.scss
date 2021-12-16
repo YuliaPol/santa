@@ -54,7 +54,7 @@ body, html {
     width: 100%;
     line-height: 15px;
     min-height: 100vh;
-    background: url(./../img/bg.jpg);
+    background: url(./../img/bg-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,6 +84,7 @@ body, html {
                 font-size: 14px;
                 line-height: 18px;
                 font-family: $fontPage;
+                font-weight: normal;
                 color: #D00000;
                 display: none;
             }
@@ -168,7 +169,7 @@ body, html {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         .red-text {
             margin-top: 100px;
             background: #D00000;
@@ -181,6 +182,41 @@ body, html {
             line-height: 13px;
             color: #FFFFFF;
             display: inline-block;
+        }
+        .form-group {
+            padding-bottom: 50px;
+            .question {
+                display: block;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                .name {
+                    text-align: center;
+                }
+            }
+            .input-wrap {
+                input {
+                    border: none;
+                    outline: none;
+                    resize: none;
+                    border-bottom: 1px solid #E5E5E5;
+                    font-family: $fontPage;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #000;
+                    width: 100%;
+                    transition: border-color 0.3s ease-in;
+                    padding: 8px 0px;
+                    max-width: 250px;
+                    &::placeholder {
+                        color: #C0C0C0;
+                    }
+                    &:focus {
+                        border-color: #D00000;;
+                    }
+                }
+            }
         }
     }
     .thanks-text {
@@ -267,8 +303,8 @@ body, html {
             padding: 40px 30px;
         }
         .thanks-wrap {
-            min-height: 180px;
-            max-height: 200px;
+            min-height: 200px;
+            max-height: 300px;
             padding-top: 20px;
             padding-bottom: 20px;
             .red-text {
@@ -304,7 +340,7 @@ body, html {
         .thanks-wrap {
             min-height: initial;
             max-height: initial;
-            height: 180px;
+            height: 280px;
         }
     }
 }
