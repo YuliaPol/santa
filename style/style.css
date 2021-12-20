@@ -293,6 +293,11 @@ body, html {
   max-width: 250px;
 }
 
+.page-wrap .thanks-wrap .form-group .input-wrap input.phone {
+  margin: auto;
+  display: block;
+}
+
 .page-wrap .thanks-wrap .form-group .input-wrap input::-webkit-input-placeholder {
   color: #C0C0C0;
 }

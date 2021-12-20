@@ -209,6 +209,10 @@ body, html {
                     transition: border-color 0.3s ease-in;
                     padding: 8px 0px;
                     max-width: 250px;
+                    &.phone {
+                        margin: auto;
+                        display: block;
+                    }
                     &::placeholder {
                         color: #C0C0C0;
                     }
