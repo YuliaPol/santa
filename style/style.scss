@@ -164,9 +164,74 @@ body, html {
             }
         }
     }
+    .chek-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        &.has-error {
+            .check-box {
+                label {
+                    color: #D00000;
+                }
+            }
+        }
+    }
+    .check-box {
+        position: relative;
+        input[type=checkbox] {
+            display: none;
+            &:checked {
+                & ~ label {
+                    &::before {
+                        border-color: #D00000;
+                    }
+                    .check {
+                       width: 16px;
+                    }
+                }
+            }
+        }
+        label {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            display: block;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            cursor: pointer;
+            &::before {
+                content: "";
+                width: 15px;
+                min-width: 15px;
+                height: 15px;
+                min-width: 15px;
+                border-radius: 5px;
+                background: #FFFFFF;
+                border: 1px solid #C4C4C4;
+                margin-right: 15px;
+            }
+            .check {
+                position: absolute;
+                display: block;
+                height: 16px;
+                top: 0px;
+                left: 3px;
+                width: 0px;
+                transition: width 0.3s;
+                overflow: hidden;
+                background: url(./../img/checkbox-arrow.svg);
+                background-position: left;
+                background-size: 16px auto;
+                background-repeat: no-repeat;
+            }
+        }
+    }
     .thanks-wrap {
         height: 60vh;
-        min-height: 250px;
+        min-height: 380px;
         max-height: 635px;
         display: flex;
         flex-direction: column;
@@ -186,9 +251,12 @@ body, html {
             display: inline-block;
         }
         .form-group {
-            padding-bottom: 50px;
             max-width: 700px;
             margin: auto;
+            padding-bottom: 20px;
+            &.chek-wrap {
+                padding-bottom: 40px;
+            }
             .error {
                 text-align: center;
             }
@@ -315,8 +383,8 @@ body, html {
             padding: 40px 30px;
         }
         .thanks-wrap {
-            min-height: 200px;
-            max-height: 300px;
+            min-height: 380px;
+            max-height: 420px;
             padding-top: 20px;
             padding-bottom: 20px;
             .red-text {
@@ -352,7 +420,7 @@ body, html {
         .thanks-wrap {
             min-height: initial;
             max-height: initial;
-            height: 280px;
+            height: 380px;
         }
     }
 }

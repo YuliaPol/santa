@@ -38,14 +38,23 @@ jQuery(function ($) {
             let erroreArrayElements = [];
             for (let i = 0; i < el.length; i++) {
                 if (el[i].tagName === 'TEXTAREA' || el[i].tagName === 'INPUT') {
-                    if (el[i].value === '' || el[i].value === ' ' || el[i].value === '-') {
-                        erroreArrayElements.push(el[i]);
-                        $(el[i]).on('click', function () {
-                            $(this).parents('.form-group').find('.error').fadeOut(300);
-                            $(el[i]).parents('.form-group').removeClass('has-error');
-                        });
-                        $(el[i]).parents('.form-group').find('.error').fadeIn(300);
-                        $(el[i]).parents('.form-group').addClass('has-error');
+                    if(el[i].type === 'checkbox'){
+                        if(!$(el[i]).is(':checked')){
+                            $(el[i]).on('change', function () {
+                                $(el[i]).parents('.form-group').removeClass('has-error');
+                            });
+                            $(el[i]).parents('.form-group').addClass('has-error');
+                        }
+                    } else {
+                        if (el[i].value === '' || el[i].value === ' ' || el[i].value === '-') {
+                            erroreArrayElements.push(el[i]);
+                            $(el[i]).on('click', function () {
+                                $(this).parents('.form-group').find('.error').fadeOut(300);
+                                $(el[i]).parents('.form-group').removeClass('has-error');
+                            });
+                            $(el[i]).parents('.form-group').find('.error').fadeIn(300);
+                            $(el[i]).parents('.form-group').addClass('has-error');
+                        }
                     }
                 }
             }
