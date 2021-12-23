@@ -57,19 +57,12 @@ body, html {
     background: url(./../img/bg-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 85%;
     background-attachment: fixed;
-    padding: 100px;
+    padding: 100px 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    &.bg-first {
-        background: url(./../img/bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
     .content-block {
         background: #FFFFFF;
         box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
@@ -163,7 +156,9 @@ body, html {
                 font-family: $fontPage;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 11px;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 2px;
                 color: #FFFFFF;
                 cursor: pointer;
             }
@@ -192,6 +187,11 @@ body, html {
         }
         .form-group {
             padding-bottom: 50px;
+            max-width: 700px;
+            margin: auto;
+            .error {
+                text-align: center;
+            }
             .question {
                 display: block;
                 padding-top: 20px;
@@ -249,7 +249,7 @@ body, html {
 }
 @media screen and (max-width: 1200px) {
     .page-wrap {
-        padding: 60px;
+        padding: 100px;
         .content-block {
             .form-group {
                 padding-bottom: 50px;

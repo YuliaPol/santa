@@ -63,7 +63,7 @@ jQuery(function ($) {
 
         //only number for phone
         $('.phone').inputFilter(function(value) {
-            return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 99999999999);
+            return /^-?\+?\d*$/.test(value) && (value === "" || value);
         });
     });
 });

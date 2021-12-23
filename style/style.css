@@ -61,10 +61,10 @@ body, html {
   background: url(./../img/bg-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: 80% 80%;
-          background-size: 80%;
+  -webkit-background-size: 85% 85%;
+          background-size: 85%;
   background-attachment: fixed;
-  padding: 100px;
+  padding: 100px 200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,15 +77,6 @@ body, html {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.page-wrap.bg-first {
-  background: url(./../img/bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-attachment: fixed;
 }
 
 .page-wrap .content-block {
@@ -228,7 +219,9 @@ body, html {
   font-family: "Gilroy", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -271,6 +264,12 @@ body, html {
 
 .page-wrap .thanks-wrap .form-group {
   padding-bottom: 50px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.page-wrap .thanks-wrap .form-group .error {
+  text-align: center;
 }
 
 .page-wrap .thanks-wrap .form-group .question {
@@ -352,7 +351,7 @@ body, html {
 
 @media screen and (max-width: 1200px) {
   .page-wrap {
-    padding: 60px;
+    padding: 100px;
   }
   .page-wrap .content-block .form-group {
     padding-bottom: 50px;
