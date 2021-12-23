@@ -57,7 +57,7 @@ body, html {
     background: url(./../img/bg-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
     background-attachment: fixed;
     padding: 100px;
     display: flex;
@@ -260,6 +260,7 @@ body, html {
 }
 @media screen and (max-width: 992px) {
     .page-wrap {
+        background-size: cover;
         .content-block {
             .form-group {
                 padding-bottom: 35px;

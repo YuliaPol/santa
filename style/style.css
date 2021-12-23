@@ -61,8 +61,8 @@ body, html {
   background: url(./../img/bg-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 80% 80%;
+          background-size: 80%;
   background-attachment: fixed;
   padding: 100px;
   display: -webkit-box;
@@ -357,6 +357,10 @@ body, html {
 }
 
 @media screen and (max-width: 992px) {
+  .page-wrap {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
   .page-wrap .content-block .form-group {
     padding-bottom: 35px;
   }
