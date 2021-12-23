@@ -79,6 +79,15 @@ body, html {
           justify-content: center;
 }
 
+.page-wrap.bg-first {
+  background: url(./../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+}
+
 .page-wrap .content-block {
   background: #FFFFFF;
   -webkit-box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);

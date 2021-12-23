@@ -63,6 +63,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    &.bg-first {
+        background: url(./../img/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .content-block {
         background: #FFFFFF;
         box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
