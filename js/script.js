@@ -40,6 +40,7 @@ jQuery(function ($) {
                 if (el[i].tagName === 'TEXTAREA' || el[i].tagName === 'INPUT') {
                     if(el[i].type === 'checkbox'){
                         if(!$(el[i]).is(':checked')){
+                            erroreArrayElements.push(el[i]);
                             $(el[i]).on('change', function () {
                                 $(el[i]).parents('.form-group').removeClass('has-error');
                             });
